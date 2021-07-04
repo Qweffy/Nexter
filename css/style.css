@@ -262,7 +262,9 @@ body {
 .nav {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  align-items: center; }
   .nav__link:link, .nav__link:visited {
     font-size: 1.4rem;
     color: #fff;
@@ -270,4 +272,15 @@ body {
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.05); }
+    padding: 1.5rem;
+    display: block;
+    transition: all 0.2s; }
+  .nav__link:hover, .nav__link:active {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-3px); }
+
+.copyright {
+  font-size: 1.4rem;
+  color: #aaa;
+  margin-top: 6rem;
+  text-align: center; }

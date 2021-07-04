@@ -7,7 +7,9 @@
 .nav {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  align-items: center;
 
   &__link:link,
   &__link:visited {
@@ -17,7 +19,20 @@
     font-family: $font-display;
     text-transform: uppercase;
     text-align: center;
-
-    background-color: rgba(#fff, 0.05);
+    padding: 1.5rem;
+    display: block;
+    transition: all 0.2s;
   }
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, 0.05);
+    transform: translateY(-3px);
+  }
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: $color-grey-light-2;
+  margin-top: 6rem;
+  text-align: center;
 }
